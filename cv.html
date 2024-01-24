@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> 
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    
+     <style>
+        .vl {
+          border-left: 1px solid black;
+          height: 300px;
+        }
+        hr{
+                border: 1px solid;
+                color:black;
+                width: 75%;
+                position:relative;
+                
+            }
+
+        #otsikko1{
+            text-align: center;
+            padding-top:50px;
+            font-family:'Baskerville',serif;
+            padding-bottom: 50px;
+            color:black
+        }
+        #otsikko2{
+            position: relative;
+            float:left;
+            margin-left:255px;
+            font-family:'Baskerville',serif;
+            text-align: center;
+            padding-bottom: 50px;
+            color:black
+        }
+
+        #myChart {
+            width:100%;
+            max-width:600px;
+            float:right;
+             margin-right:10%;
+            padding-top:50px;
+        }
+
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(20vh);
+            visibility: hidden;
+            transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+            will-change: opacity, visibility;
+            }
+        .fade-in-section.is-visible {
+        opacity: 1;
+        transform: none;
+        visibility: visible;
+        }
+        </style>
+    
+    <title>Document</title>
+    </head >
+    <body style="background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgb(18, 2, 2));"> 
+    
+    <div style="position: relative; font-family:'Baskerville',serif; background-image: linear-gradient(to top, rgba(255,0,0,0), rgb(18, 2, 2));">
+        <h1 style="float: left; margin-left: 25%; margin-top: 10%;"> Karri Seppänen</h1>
+        <hr >
+    </div>
+    <div >
+        <div id="otsikko1" style="float:left; margin-left: 20%;">
+        <h2>
+        Yhteystiedot:
+        </h2>
+        <h3>
+             &#9758 karriseppanen99@gmail.com
+            <br>
+            &#9978Vuorikatu 34 B 45
+            <br>
+            &#9951 70100 Kuopio
+            <br>
+            &#9742+358505385069
+            <br>
+            <a href="https://github.com/denzelkari666" target="_blank"> GitHub</a>
+        </h3>
+    </div>
+    <div id="otsikko1" style=" float:right; margin-right:20%; ">
+        <h2>
+        Koulutus:
+        </h2>
+        <h3>
+             Savonia-Ammattikorkeakoulu
+            <br>
+            Tietotekniikan insinööri
+            <br>
+            Oletettu valmistumisvuosi 2026-
+            <br>
+            Erikoistuminen sovelluskehitykseen/Fullstack
+        </h3>
+    </div>
+</div>
+    <hr>
+    <div id="otsikko1">
+        <h2>
+            Tietoa minusta
+        </h2>
+        <h3 style="margin-left: 15%; margin-right: 15%;">
+            Innostunut ja omistautunut Savonia-ammattikorkeakoulun toisen vuoden tietotekniikan insinööriopiskelija. Pidän itseäni nopeana oppijana. Otan avoinmielisesti haasteet vastaan vaikka ne vaatisivat
+             uusien teknologien omaksumista, niihin perehtymistä ja eteentulevien haasteiden ylittämistä.
+             Olen innokas tiimityöskentelijä ja jatkuva haluni laajentaa osaamistani kehittyvän teknologiakentän parissa luo minulle hyvän pohjan ottaa ensiaskeleeni työelämään oman erikoisalan työtehtävissä.
+        </h3>
+    </div>
+    <hr>
+    <div id="otsikko1">
+        <h2>
+        Työkokemus
+        </h2>
+    </div>
+    <div id="otsikko2">
+            <h3 >
+                Työnantaja
+                <br>
+                <br>
+                &#9830 Sol Logistiikkapalvelut Oy 
+                <br>
+                <br>
+                <br>
+                &#9830 Kairest Oy 
+                <br>
+                <br>
+                <br>
+                &#9830 Sol Logistiikkapalvelut 
+            </h3>
+        </div>
+    <div id="otsikko2" >
+        <h3>
+            Työtehtävä
+            <br>
+            <br>
+            Postiauton kuljettaja, postin jako 
+            <br>
+            <br>
+            <br>
+            Laitoshuoltaja 
+            <br>
+            <br>
+            <br>
+            Postiauton kuljettaja, postin jako  
+        </h3>
+    </div>
+    <div id="otsikko2">
+        <h3>
+            Ajankohta
+            <br>
+            <br>
+            05/ 2023 - 08/2023
+            <br>
+            <br>
+            <br>
+            02/ 2022 - 08/2022
+            <br>
+            <br>
+            <br>
+            07/2021 - 12/2021  
+        </h3> 
+    </div>
+    <hr style="color:gray">
+    <div style=" padding-top:50px; font-family:'Baskerville',serif;">
+    <h1 style="text-align: center;color:rgb(190, 190, 190)">Osaaminen & tekninen tausta</h1>
+       
+    <div style="margin-left:15%;float:left;color:rgb(190, 190, 190)">
+        <h2>
+            Ohjelmointikielet & teknologiat 
+        </h2>
+        <h3>
+            &#9830 Vahva tietotekninen tausta Windows-järjestelmästä
+
+        </h3>
+        <h3>
+            &#9830  Web-ohjelmointi (HTML,Javascript, bootstrap, JQuery, CSS). 
+
+        </h3>
+        
+        <h3>
+            &#9830 Windows-forms .NET Applikaatiot
+        </h3>
+        <h3>
+            &#9830 Tietokannat (MariaDB, MySqlWorkbench, HeidiSQL)
+        </h3>
+      
+        <h3>
+            &#9830 Versionhallintajärjestelmät GitHub & Azure DevOps
+
+        </h3>
+        </div>
+    </div>
+    <div>
+        <canvas id="myChart" ></canvas>
+    </div>
+    <script>
+        var xValues = ["C#", "Windows Forms", "Javascript", "HTML", "CSS",   "Bootstrap","SQL" ,"JQuery","Java",];
+        var yValues = [80, 80,65, 55, 55,  45, 45, 35,20,0 ];
+        var barColors = ["green","green","lightgreen","lightgreen","lightgreen","yellow","yellow","yellow","red"];
+        
+        new Chart("myChart", {
+          type: "bar",
+          data: {
+            labels: xValues,
+            datasets: [{
+              backgroundColor: barColors,
+              data: yValues
+            }]
+          },
+          options: {
+            legend: {display: false},
+            title: {
+              display: true,
+              text: "Ohjelmointikielet (prosentuaalinen vahvuus osaamisesta)"
+            }
+          }
+        });
+        </script>
+
+        <hr style="color:wheat">
+        <div style="color:wheat">
+            <h1 id="otsikko1" style="color:wheat" >
+                Muu osaaminen & harrastukset
+            </h1>
+            <div style="text-align: center;" >
+                <h3>
+                    &#9830 Shotcut/Sony Vegas movie studio videoeditointi
+                </h3>
+                <h3>
+                    &#9830 Blender & AutoREVIT 3D-mallintaminen
+                </h3>
+                <h3>
+                    &#9830 Kitaran & rumpujen soitto
+                </h3>
+                <h3>
+                    &#9830  Videopelit
+                </h3>
+            </div>
+            <hr style="color:wheat">
+        </div>
+        
+
+</body>
+</html>
